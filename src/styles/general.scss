@@ -1,0 +1,28 @@
+@use './partials/utilities.scss' as *;
+
+@import "./partials/variables.scss";
+@import "bootstrap/scss/bootstrap";
+
+div ul {
+    list-style: none;  
+    display: flex;
+    padding-left: 0;
+    a {
+        color: black;
+        font-weight: 700;
+        text-decoration: none;
+        padding: .05rem 1rem;  
+        display: block;
+        transition: font-weight .3s;
+        padding-left: 0;
+
+        &:hover{
+            color: $color-primary;
+        }
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+}
