@@ -7,7 +7,7 @@
         <div class="container-logo">
             <img src="../assets/dc-logo.png" alt="logo DC" class="w-50">
         </div>
-        <!-- <div> <font-awesome-icon icon="fa-solid fa-bars" /></div> -->
+        <div><i class="fa-solid fa-bars d-lg-none "></i></div>
         <div class="menu d-none d-lg-block">
             <ul>
                 <li>

@@ -8,4 +8,4 @@ import 'bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import '@fortawesome/fontawesome';
-import '@fortawesome/fontawesome';
+// import '@fortawesome/fontawesome';

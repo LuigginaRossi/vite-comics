@@ -1,7 +1,10 @@
-@use './partials/utilities.scss' as *;
+@use './partials/utilities' as *;
 
-@import "./partials/variables.scss";
-@import "bootstrap/scss/bootstrap";
+@use "./partials/variables" as *;
+
+@use "@fortawesome/fontawesome-free/css/all.min.css";
+
+@use "./partials/bootstrap" ;
 
 div ul {
     list-style: none;  
