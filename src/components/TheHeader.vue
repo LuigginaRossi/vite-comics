@@ -15,7 +15,7 @@
         <div><i class="fa-solid fa-bars d-lg-none "></i></div>
         <div class="menu d-none d-lg-block">
             <ul>
-                <li v-for="element, i in navList" :key="(element + i)">
+                <li v-for="element, i in navList" :key="(element + i)" :class="{'active' : i === 1}">
                     <a href="#">{{element}}</a>
                 </li>
             </ul>
@@ -32,6 +32,12 @@
             margin-bottom: -4px;
             border-bottom: 4px solid #0d6efd;
         }
+    }
+    .active {
+        border-bottom: 4px solid #0d6efd;
+        a{
+            color: #0d6efd;
+         }
     }
 }
 </style>
