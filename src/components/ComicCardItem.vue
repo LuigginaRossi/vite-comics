@@ -14,7 +14,7 @@
 </script>
 
 <template>
-        <div class="card">
+        <div class="card border-dark">
             <img :src="card.thumb" class="card-img-top" alt="comic image">
             <div class="card-body bg-dark">
                 <h6 class="card-title text-light">{{card.series}}</h6>        
@@ -23,8 +23,8 @@
 </template>
 
 <style lang="scss">
-    .card{
-        --bs-card-border-width: 0;
-        --bs-card-border-color: none;
-    }
+        img{
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
 </style>
