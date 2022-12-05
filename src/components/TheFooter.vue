@@ -1,7 +1,14 @@
 
 <script>
 export default {
-    
+    data() {
+        return {
+            dcComicsList: ["Characters", "Comics", "Movies", "TV", "Games", "Videos", "News"],
+            shopList: ["Shop Dc", "Shop Dc Collectibles"],
+            dcList: ["Term Of Use", "Privacy policy (New)", "Ad Choise", "Adversting", "Jobs", "Subscriptions", "Talent Workshops", "CPSC Certificateds", "Rating", "Shop Help", "Contact Us"],
+            sitesList: ["DC", "MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa",], 
+        }
+    },
 }
 </script>
 
@@ -9,85 +16,35 @@ export default {
     <footer class="py-5">
         <div class="container">
             <div class="row">
+
                 <div class="col-auto">
                     <ul class="d-block">
                         <li>
                             <a href="#" class="text-light py-3 d-block">DC COMICS</a>
                         </li>
-                        <li>
-                            <a href="#">Characters</a>
-                        </li>
-                        <li>
-                            <a href="#">Comics</a>
-                        </li>
-                        <li>
-                            <a href="#">Movies</a>
-                        </li>
-                        <li>
-                            <a href="#">TV</a>
-                        </li>
-                        <li>
-                            <a href="#">Games</a>
-                        </li>
-                        <li>
-                            <a href="#">Videos</a>
-                        </li>
-                        <li>
-                            <a href="#">News</a>
+                        <li v-for="(element, i) in dcComicsList" :key="(element + i)">
+                            <a href="#">{{element}}</a>
                         </li>
                     </ul>
+
                     <ul class="d-block">
                         <li>
                             <a href="#" class="text-light py-3 d-block">SHOP</a>
                         </li>
-                        <li>
-                            <a href="#">Shop DC</a>
+                        <li  v-for="(element, i) in shopList" :key="(element + i)">
+                            <a href="#">{{element}}</a>
                         </li>
-                        <li>
-                            <a href="#">Shop DC Collectibles</a>
-                        </li>
+                  
                     </ul>
                 </div>
+
                 <div class="col-auto">
                     <ul class="d-block">
                         <li>
                             <a href="#" class="text-light py-3 d-block">DC</a>
                         </li>
-                        <li>
-                            <a href="#">Terms Of Use</a>
-                        </li>
-                        <li>
-                            <a href="#">Privacy policy (New)</a>
-                        </li>
-                        <li>
-                            <a href="#">Ad Choices</a>
-                        </li>
-                        <li>
-                            <a href="#">Advertising</a>
-                        </li>
-                        <li>
-                            <a href="#">Jobs</a>
-                        </li>
-                        <li>
-                            <a href="#">Subscription</a>
-                        </li>
-                        <li>
-                            <a href="#">Talent Workshops</a>
-                        </li>
-                        <li>
-                            <a href="#">CPSC Certificates</a>
-                        </li>
-                        <li>
-                            <a href="#">CPSC Certificates</a>
-                        </li>
-                        <li>
-                            <a href="#">Ratings</a>
-                        </li>
-                        <li>
-                            <a href="#">Shop Help</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact Us</a>
+                        <li v-for="(element, i) in dcList" :key="(element + i)" >
+                            <a href="#">{{element}}</a>
                         </li>
                     </ul>
                 </div>
@@ -96,20 +53,8 @@ export default {
                         <li>
                             <a href="#" class="text-light py-3 d-block">SITES</a>
                         </li>
-                        <li>
-                            <a href="#">DC</a>
-                        </li>
-                        <li>
-                            <a href="#">MAD Magazine</a>
-                        </li>
-                        <li>
-                            <a href="#">DC Kids</a>
-                        </li>
-                        <li>
-                            <a href="#">DC Universe</a>
-                        </li>
-                        <li>
-                            <a href="#">DC Power Visa</a>
+                        <li  v-for="(element, i) in sitesList" :key="(element + i)" >
+                            <a href="#">{{element}}</a>
                         </li>
                     </ul>
                 </div>
