@@ -4,9 +4,10 @@
     import Shop from './components/Shop.vue';
     import SingUp from './components/SingUp.vue';
     import ComicsList from './components/ComicsList.vue';
+    import Jumbotron from './components/Jumbotron.vue';
 
     export default{
-        components: { TheHeader, TheFooter, Shop, SingUp, ComicsList }
+        components: { TheHeader, TheFooter, Shop, SingUp, ComicsList, Jumbotron }
         
     }
 </script>
@@ -14,11 +15,7 @@
 <template>
     <TheHeader></TheHeader>
 
-    <div class="py-5 bg-dark text-light "> 
-        <div class="container">
-            --> Content goes here &lt;-- 
-        </div> 
-    </div>
+    <Jumbotron></Jumbotron>
 
     <ComicsList></ComicsList>
 
