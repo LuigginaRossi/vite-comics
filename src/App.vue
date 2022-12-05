@@ -3,9 +3,10 @@
     import TheFooter from './components/TheFooter.vue';
     import Shop from './components/Shop.vue';
     import SingUp from './components/SingUp.vue';
+    import ComicsList from './components/ComicsList.vue';
 
     export default{
-        components: { TheHeader, TheFooter, Shop, SingUp }
+        components: { TheHeader, TheFooter, Shop, SingUp, ComicsList }
         
     }
 </script>
@@ -18,6 +19,8 @@
             --> Content goes here &lt;-- 
         </div> 
     </div>
+
+    <ComicsList></ComicsList>
 
     <Shop></Shop>
 
